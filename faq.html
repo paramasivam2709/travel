@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Stackly Adventure</title>
+  <meta name="description" content="Answers about booking, cancellation, travel insurance, payments, airport pickup and custom adventure packages.">
+  <meta name="keywords" content="travel faq, booking questions, cancellation policy">
+  <link rel="icon" href="img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" data-no-transition>
+        <img src="img/logo.webp" alt="">
+        <span class="logo-text"><b>STACKLY</b></span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html" class="active">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn search-btn" aria-label="Search"><span class="ic ic-search"></span></button>
+        <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><span class="ic ic-sun sun-i"></span><span class="ic ic-moon moon-i"></span></button>
+        <a href="login.html" class="login-link"><span class="ic ic-user"></span>Login</a>
+        <a href="pricing.html" class="btn btn-primary btn-sm"><span class="ic ic-plane"></span>Book Now</a>
+        <button class="hamburger" aria-label="Open menu"><span class="ic ic-menu"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Mobile nav ===== -->
+  <nav class="mobile-nav" aria-label="Mobile">
+    <button class="mobile-close" aria-label="Close menu"><span class="ic ic-close"></span></button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#destinations">Destinations</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html" class="active">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <div class="m-actions">
+      <a href="login.html" class="btn btn-ghost">Login</a>
+      <a href="pricing.html" class="btn btn-primary">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- ===== Search overlay ===== -->
+  <div class="search-overlay">
+    <button class="search-close" aria-label="Close search"><span class="ic ic-close"></span></button>
+    <div class="search-box">
+      <form role="search">
+        <input type="text" placeholder="Search destinations, adventures, packages…" aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
+      <p class="search-hint">Try "Bali", "Trekking", "Maldives" or "Skiing"</p>
+    </div>
+  </div>
+  <main>
+    <!-- ===== Page hero ===== -->
+    <section class="page-hero">
+      <div class="ph-bg"><img src="img/activities/camping.webp" alt="" loading="lazy"></div>
+      <div class="container">
+        <span class="kicker" style="color:var(--gold)">Stackly Adventure</span>
+        <h1 data-aos="fade-up">Questions? <span class="accent">We've Got Answers</span></h1>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>FAQ</span></nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="faq-cats" data-aos="fade-up">
+          <button class="cat-pill active">All</button>
+          <button class="cat-pill">Booking</button>
+          <button class="cat-pill">Payments</button>
+          <button class="cat-pill">Trekking</button>
+          <button class="cat-pill">Support</button>
+        </div>
+        <div class="faq-wrap">
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">How do I book a trip? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Pick a package or destination, choose your dates and travelers, and pay a 20% advance online. Your dedicated travel designer confirms everything within 24 hours.</p></div>
+          </div>
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">Can I cancel my booking? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Full refund up to 30 days before departure, 50% up to 15 days, and free rescheduling up to 15 days before your trip. Adventure credits never expire.</p></div>
+          </div>
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">Do you provide travel insurance? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Every Adventure and Luxury package includes high-altitude and water-sport insurance. Explorer packages can add coverage at checkout.</p></div>
+          </div>
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">Can I customize my travel package? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Every itinerary is a starting point. Add days, swap activities, upgrade stays or go fully private — custom quotes are free within 48 hours.</p></div>
+          </div>
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">Do you provide airport pickup? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Yes — meet-and-greet transfers are included in all packages, with flight-delay tracking so your driver is there even at 3 AM.</p></div>
+          </div>
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">What payment methods do you accept? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>UPI, all major credit/debit cards, net banking, and EMI plans above ₹30,000. International travelers can pay by card or wire transfer.</p></div>
+          </div>
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">Are your treks suitable for beginners? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Yes — every trek is graded 1–5 for difficulty. Grade 1–2 treks need only basic fitness, and our guides set a pace the slowest traveler enjoys.</p></div>
+          </div>
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">What should I pack for a high-altitude trek? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>We send a detailed packing list after booking, and rental gear (down jackets, sleeping bags, poles) is available at base camps for a small fee.</p></div>
+          </div>
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">Do you offer group or corporate discounts? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Groups of 6+ save 10%, and corporate offsites get custom pricing with a dedicated account manager. Contact us for a tailored quote.</p></div>
+          </div>
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-q">Is my payment information secure? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Payments are processed over PCI-DSS compliant gateways. We never store card numbers on our servers.</p></div>
+          </div>
+        </div>
+        <div class="text-center mt-60" data-aos="fade-up">
+          <p style="color:var(--text-soft);margin-bottom:20px">Still curious? Our travel designers love questions.</p>
+          <a href="contact.html" class="btn btn-primary">Ask Us Anything <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Newsletter ===== -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="newsletter" data-aos="zoom-in">
+          <span class="kicker center" style="color:var(--gold)">Newsletter</span>
+          <h2>Get Travel Inspiration<br>Straight To Your Inbox</h2>
+          <p>One beautifully designed email a week — secret spots, flash deals and stories from the trail. No spam, ever.</p>
+          <form class="nl-form">
+            <input type="email" placeholder="Enter your email" aria-label="Email address" required>
+            <button type="submit" class="btn btn-primary"><span class="ic ic-send"></span>Subscribe</button>
+          </form>
+          <p class="nl-msg"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" data-no-transition>
+            <img src="img/logo.webp" alt="">
+            <span class="logo-text"><b>STACKLY</b></span>
+          </a>
+          <p>Premium adventure travel crafted in Chennai, explored worldwide. Trek higher, dive deeper, dream bigger.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><span class="ic ic-facebook"></span></a>
+            <a href="#" aria-label="Instagram"><span class="ic ic-instagram"></span></a>
+            <a href="#" aria-label="YouTube"><span class="ic ic-youtube"></span></a>
+            <a href="#" aria-label="Twitter / X"><span class="ic ic-twitter"></span></a>
+            <a href="#" aria-label="LinkedIn"><span class="ic ic-linkedin"></span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="about.html#story">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#destinations">Destinations</a></li>
+            <li><a href="index.html#activities">Adventure</a></li>
+            <li><a href="pricing.html">Packages</a></li>
+            <li><a href="blog.html">Travel Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><span class="ic ic-pin"></span>Chennai, Tamil Nadu, India</li>
+            <li><span class="ic ic-phone"></span>+91 98765 43210</li>
+            <li><span class="ic ic-mail"></span>hello@stacklyadventure.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> Stackly Adventure. All rights reserved.</span>
+        <span><a href="faq.html">Privacy Policy</a> · <a href="faq.html">Terms of Travel</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backTop" aria-label="Back to top"><span class="ic ic-arrow-right"></span></button>
+  <script src="js/vendor/aos.js"></script>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

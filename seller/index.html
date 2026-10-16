@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Dashboard</title>
+  <meta name="description" content="Your travel business at a glance.">
+  <meta name="keywords" content="stackly adventure dashboard">
+  <link rel="icon" href="../img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body class="dash-body">
+  <div class="dash-layout">
+    <aside class="sidebar">
+      <a href="../index.html" class="sb-brand">
+        <img src="../img/logo.webp" alt="">
+        <span><b>STACKLY</b></span>
+      </a>
+      <nav class="sb-nav">
+        <a href="index.html" class="active"><span class="ic ic-home"></span>Dashboard</a>
+        <a href="packages.html"><span class="ic ic-box"></span>Packages</a>
+        <a href="bookings.html"><span class="ic ic-calendar"></span>Bookings</a>
+        <a href="customers.html"><span class="ic ic-users"></span>Customers</a>
+        <a href="earnings.html"><span class="ic ic-wallet"></span>Earnings</a>
+        <a href="index.html#reviews"><span class="ic ic-star"></span>Reviews</a>
+        <a href="index.html#messages"><span class="ic ic-message"></span>Messages</a>
+        <a href="settings.html"><span class="ic ic-user"></span>Profile</a>
+        <a href="settings.html"><span class="ic ic-settings"></span>Settings</a>
+        <a href="logout.html"><span class="ic ic-logout"></span>Logout</a>
+      </nav>
+      <div class="sb-user">
+        <span class="avatar js-user-initials" style="width:42px;height:42px;border-radius:50%;background:var(--grad-sun);color:#fff;display:grid;place-items:center;font-weight:800;font-family:var(--font-display)">--</span>
+        <div><b class="js-user-name">Traveler</b><small class="js-user-role">User</small></div>
+      </div>
+    </aside>
+    <main class="dash-main">
+      <div class="dash-top">
+        <div style="display:flex;align-items:center;gap:16px">
+          <button class="sb-toggle" aria-label="Menu"><span class="ic ic-menu"></span></button>
+          <div><h1>Seller Dashboard</h1><p>Your travel business at a glance.</p></div>
+        </div>
+        <div class="dash-actions">
+          <button class="dash-icon-btn theme-toggle" aria-label="Toggle theme"><span class="ic ic-moon"></span></button>
+          <button class="dash-icon-btn" aria-label="Notifications"><span class="ic ic-bell"></span><span class="dot"></span></button>
+          <a href="../index.html" class="btn btn-primary"><span class="ic ic-globe"></span>View Site</a>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card"><span class="stat-ic g1"><span class="ic ic-box"></span></span><div><span class="num" data-count="18">0</span><br><small>Total Packages</small></div><span class="trend">+2 new</span></div>
+        <div class="stat-card"><span class="stat-ic g2"><span class="ic ic-calendar"></span></span><div><span class="num" data-count="342">0</span><br><small>Total Bookings</small></div><span class="trend">+18% MoM</span></div>
+        <div class="stat-card"><span class="stat-ic g3"><span class="ic ic-users"></span></span><div><span class="num" data-count="1268">0</span><br><small>Total Customers</small></div><span class="trend">+96 new</span></div>
+        <div class="stat-card"><span class="stat-ic g4"><span class="ic ic-wallet"></span></span><div>₹<span class="num" data-count="42.6" data-suffix="L">0</span><br><small>Total Earnings</small></div><span class="trend">+24% YoY</span></div>
+      </div>
+
+      <div class="dash-cols">
+        <div>
+          <div class="panel">
+            <div class="panel-head"><h2>Revenue Overview</h2><span class="badge ok">FY 2025–26</span></div>
+            <div class="bar-chart">
+              <div class="bar-col"><div class="bar" data-h="38" data-v="₹2.1L"></div><small>Oct</small></div>
+              <div class="bar-col"><div class="bar" data-h="46" data-v="₹2.6L"></div><small>Nov</small></div>
+              <div class="bar-col"><div class="bar" data-h="55" data-v="₹3.1L"></div><small>Dec</small></div>
+              <div class="bar-col"><div class="bar" data-h="48" data-v="₹2.7L"></div><small>Jan</small></div>
+              <div class="bar-col"><div class="bar" data-h="66" data-v="₹3.8L"></div><small>Feb</small></div>
+              <div class="bar-col"><div class="bar" data-h="80" data-v="₹4.6L"></div><small>Mar</small></div>
+              <div class="bar-col"><div class="bar hot" data-h="100" data-v="₹5.8L"></div><small>Apr</small></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head"><h2>Recent Bookings</h2><a class="link" href="bookings.html">View all</a></div>
+            <table class="dash-table">
+              <thead><tr><th>Customer</th><th>Package</th><th>Date</th><th>Amount</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td><div class="td-user"><img src="../img/avatars/a1.webp" alt=""><div><b>Priya Sharma</b><small>Mumbai</small></div></div></td><td>Bali Island Escape</td><td>May 14</td><td>₹99,998</td><td><span class="badge ok">Confirmed</span></td></tr>
+                <tr><td><div class="td-user"><img src="../img/avatars/a2.webp" alt=""><div><b>James Carter</b><small>London</small></div></div></td><td>Swiss Alpine Adventure</td><td>May 20</td><td>₹1,79,998</td><td><span class="badge warn">Pending</span></td></tr>
+                <tr><td><div class="td-user"><img src="../img/avatars/a3.webp" alt=""><div><b>Ananya Iyer</b><small>Bengaluru</small></div></div></td><td>Maldives Luxury Retreat</td><td>Jun 03</td><td>₹1,49,998</td><td><span class="badge ok">Confirmed</span></td></tr>
+                <tr><td><div class="td-user"><img src="../img/avatars/a4.webp" alt=""><div><b>Rahul Mehta</b><small>Singapore</small></div></div></td><td>Manali Snow Expedition</td><td>Jun 11</td><td>₹49,998</td><td><span class="badge info">In Review</span></td></tr>
+                <tr><td><div class="td-user"><img src="../img/avatars/a5.webp" alt=""><div><b>Sofia Müller</b><small>Berlin</small></div></div></td><td>Thailand Explorer</td><td>Jun 18</td><td>₹59,997</td><td><span class="badge ok">Confirmed</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <div class="panel">
+            <div class="panel-head"><h2>Top Destinations</h2></div>
+            <div class="earn-line"><span>Bali</span><b>86 bookings</b></div>
+            <div class="progress-line" style="background:var(--bg);margin:0 0 16px"><span data-w="86" style="background:var(--grad-sun)"></span></div>
+            <div class="earn-line"><span>Switzerland</span><b>72 bookings</b></div>
+            <div class="progress-line" style="background:var(--bg);margin:0 0 16px"><span data-w="72" style="background:var(--grad-blue)"></span></div>
+            <div class="earn-line"><span>Maldives</span><b>64 bookings</b></div>
+            <div class="progress-line" style="background:var(--bg);margin:0 0 16px"><span data-w="64" style="background:linear-gradient(135deg,#00C2A8,#00A8CC)"></span></div>
+            <div class="earn-line"><span>Manali</span><b>51 bookings</b></div>
+            <div class="progress-line" style="background:var(--bg);margin:0 0 6px"><span data-w="51" style="background:linear-gradient(135deg,#7b2ff7,#f107a3)"></span></div>
+          </div>
+
+          <div class="panel" id="reviews">
+            <div class="panel-head"><h2>Latest Reviews</h2><span class="badge ok">4.9 avg</span></div>
+            <div class="review-card">
+              <div class="rc-head"><img src="../img/avatars/a5.webp" alt="Sofia"><div><b style="font-size:.92rem">Sofia Müller</b><div class="stars"><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span></div></div></div>
+              <p>"Whale sharks on day two! The dive instructors were absolute pros."</p>
+            </div>
+            <div class="review-card">
+              <div class="rc-head"><img src="../img/avatars/a2.webp" alt="James"><div><b style="font-size:.92rem">James Carter</b><div class="stars"><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span></div></div></div>
+              <p>"Honeymoon in Bali felt handcrafted. Worth every rupee."</p>
+            </div>
+          </div>
+
+          <div class="panel" id="messages">
+            <div class="panel-head"><h2>Notifications</h2><span class="badge ok">4 new</span></div>
+            <div class="notif"><span class="n-ic" style="background:var(--grad-sun)"><span class="ic ic-wallet"></span></span><div><p><b>Payout processed:</b> ₹4.2L credited to your account.</p><small>1 hour ago</small></div></div>
+            <div class="notif"><span class="n-ic" style="background:var(--grad-blue)"><span class="ic ic-box"></span></span><div><p><b>Bali package</b> is 90% booked for May — consider adding slots.</p><small>5 hours ago</small></div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/dashboard.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",()=>dashBoot("seller"));</script>
+</body>
+</html>

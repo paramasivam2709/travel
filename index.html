@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly Adventure — Explore Beyond Limits | Premium Adventure Travel</title>
+  <meta name="description" content="Stackly Adventure crafts premium adventure travel experiences — mountain trekking, scuba diving, paragliding and luxury tours across 100+ destinations worldwide.">
+  <meta name="keywords" content="adventure travel, trekking, scuba diving, paragliding, travel packages, Stackly Adventure">
+  <link rel="icon" href="img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div id="preloader">
+    <div class="preloader-logo">
+      <img src="img/logo.webp" alt="">
+      <div class="preloader-title">STACKLY</div>
+    </div>
+    <div class="preloader-ring">
+      <svg viewBox="0 0 120 120">
+        <defs><linearGradient id="preg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF6B1A"/><stop offset="1" stop-color="#FFB703"/></linearGradient></defs>
+        <circle class="track" cx="60" cy="60" r="52"/>
+        <circle class="bar" cx="60" cy="60" r="52"/>
+      </svg>
+      <div class="preloader-pct">0%</div>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" data-no-transition>
+        <img src="img/logo.webp" alt="">
+        <span class="logo-text"><b>STACKLY</b></span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn search-btn" aria-label="Search"><span class="ic ic-search"></span></button>
+        <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><span class="ic ic-sun sun-i"></span><span class="ic ic-moon moon-i"></span></button>
+        <a href="login.html" class="login-link"><span class="ic ic-user"></span>Login</a>
+        <a href="pricing.html" class="btn btn-primary btn-sm"><span class="ic ic-plane"></span>Book Now</a>
+        <button class="hamburger" aria-label="Open menu"><span class="ic ic-menu"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Mobile nav ===== -->
+  <nav class="mobile-nav" aria-label="Mobile">
+    <button class="mobile-close" aria-label="Close menu"><span class="ic ic-close"></span></button>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#destinations">Destinations</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <div class="m-actions">
+      <a href="login.html" class="btn btn-ghost">Login</a>
+      <a href="pricing.html" class="btn btn-primary">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- ===== Search overlay ===== -->
+  <div class="search-overlay">
+    <button class="search-close" aria-label="Close search"><span class="ic ic-close"></span></button>
+    <div class="search-box">
+      <form role="search">
+        <input type="text" placeholder="Search destinations, adventures, packages…" aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
+      <p class="search-hint">Try "Bali", "Trekking", "Maldives" or "Skiing"</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-bg"><img src="img/hero/hero-main.webp" alt="Hiker above a sea of clouds at sunset in the mountains" fetchpriority="high"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-particles"></div>
+
+      <div class="hero-float hf-compass"><img src="svg/compass.svg" alt=""></div>
+      <div class="hero-float hf-plane"><img src="svg/plane.svg" alt=""></div>
+      <div class="hero-float hf-pin"><img src="svg/location.svg" alt=""></div>
+      <div class="hero-float hf-mountain"><img src="svg/mountain.svg" alt=""></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-tag">It's Time For A New Adventure</span>
+          <h1>
+            <span class="line"><span>Adventure</span></span>
+            <span class="line"><span class="script">Travel</span></span>
+          </h1>
+          <div class="hero-script-words"><span class="type-text" data-typing="Explore. Dream. Discover.|Climb Higher.|Dive Deeper.|Go Further.">Explore. Dream. Discover.</span><span class="cursor"></span></div>
+          <p class="lead">Discover breathtaking destinations, thrilling experiences and unforgettable journeys around the world.</p>
+          <div class="hero-cta">
+            <a href="#destinations" class="btn btn-primary"><span class="ic ic-compass"></span>Explore Destinations</a>
+            <button class="video-btn"><span class="v-icon"><span class="ic ic-play"></span></span>Watch Video</button>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="num"><span class="ic ic-globe ic-teal" style="color:var(--teal)"></span><span data-count="100" data-suffix="+">0</span></span>
+              <small>Destinations</small>
+            </div>
+            <div class="hero-stat">
+              <span class="num"><span class="ic ic-users" style="color:var(--gold)"></span><span data-count="10" data-suffix="K+">0</span></span>
+              <small>Happy Travelers</small>
+            </div>
+            <div class="hero-stat">
+              <span class="num"><span class="ic ic-star" style="color:var(--gold)"></span><span data-count="4.9">0</span></span>
+              <small>Customer Rating</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <div class="wheel"></div>
+        <span>Scroll</span>
+      </div>
+
+      <!-- Booking bar -->
+      <div class="container booking-bar">
+        <form class="booking-panel" id="bookingForm" data-aos="fade-up" data-aos-delay="200">
+          <div class="bk-field">
+            <span class="bk-icon"><span class="ic ic-pin"></span></span>
+            <div>
+              <label for="bkDest">Where to go?</label>
+              <select id="bkDest" name="destination">
+                <option value="">Select Destination</option>
+                <option>Bali</option><option>Switzerland</option><option>Maldives</option>
+                <option>Dubai</option><option>New Zealand</option><option>Paris</option>
+                <option>Thailand</option><option>Manali</option>
+              </select>
+            </div>
+            <span class="ic ic-chevron-down" style="color:var(--text-soft)"></span>
+          </div>
+          <div class="bk-field">
+            <span class="bk-icon"><span class="ic ic-calendar"></span></span>
+            <div>
+              <label for="bkDate">When?</label>
+              <input type="date" id="bkDate" name="date">
+            </div>
+          </div>
+          <div class="bk-field">
+            <span class="bk-icon"><span class="ic ic-user"></span></span>
+            <div>
+              <label for="bkTrav">Travelers</label>
+              <select id="bkTrav" name="travelers">
+                <option value="">2 Travelers</option>
+                <option>1 Traveler</option><option>2 Travelers</option>
+                <option>3 Travelers</option><option>4 Travelers</option><option>5+ Travelers</option>
+              </select>
+            </div>
+            <span class="ic ic-chevron-down" style="color:var(--text-soft)"></span>
+          </div>
+          <button type="submit" class="btn btn-primary bk-submit"><span class="ic ic-search"></span>Search Now</button>
+          <p class="bk-error"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee-band" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Trekking <span class="ic ic-mountain"></span> Diving <span class="ic ic-globe"></span> Paragliding <span class="ic ic-plane"></span> Safari <span class="ic ic-compass"></span> Camping <span class="ic ic-tent"></span> Skiing <span class="ic ic-star"></span></span>
+        <span>Trekking <span class="ic ic-mountain"></span> Diving <span class="ic ic-globe"></span> Paragliding <span class="ic ic-plane"></span> Safari <span class="ic ic-compass"></span> Camping <span class="ic ic-tent"></span> Skiing <span class="ic ic-star"></span></span>
+      </div>
+    </div>
+
+    <!-- ===== Destinations ===== -->
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="kicker center">Top Destinations</span>
+          <h2 class="section-title">Explore Popular <span class="accent">Destinations</span></h2>
+          <p class="section-sub">Handpicked places where the air is thinner, the water is bluer, and the stories are bigger.</p>
+        </div>
+        <div class="dest-grid">
+          <article class="dest-card" data-aos="fade-up">
+            <img src="img/destinations/bali.webp" alt="Rice terraces and temples of Bali" loading="lazy">
+            <div class="dest-info">
+              <span class="loc"><span class="ic ic-pin"></span>Indonesia</span>
+              <h3>Bali</h3>
+              <div class="dest-meta">
+                <span class="price">₹49,999<small>per person</small></span>
+                <span class="rating"><span class="ic ic-star"></span>4.9</span>
+              </div>
+              <a href="pricing.html" class="dest-explore">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="dest-card" data-aos="fade-up" data-aos-delay="80">
+            <img src="img/destinations/switzerland.webp" alt="Snow-capped Swiss Alps" loading="lazy">
+            <div class="dest-info">
+              <span class="loc"><span class="ic ic-pin"></span>Switzerland</span>
+              <h3>Switzerland</h3>
+              <div class="dest-meta">
+                <span class="price">₹89,999<small>per person</small></span>
+                <span class="rating"><span class="ic ic-star"></span>4.8</span>
+              </div>
+              <a href="pricing.html" class="dest-explore">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="dest-card" data-aos="fade-up" data-aos-delay="160">
+            <img src="img/destinations/maldives.webp" alt="Turquoise lagoon in the Maldives" loading="lazy">
+            <div class="dest-info">
+              <span class="loc"><span class="ic ic-pin"></span>Maldives</span>
+              <h3>Maldives</h3>
+              <div class="dest-meta">
+                <span class="price">₹74,999<small>per person</small></span>
+                <span class="rating"><span class="ic ic-star"></span>5.0</span>
+              </div>
+              <a href="pricing.html" class="dest-explore">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="dest-card" data-aos="fade-up" data-aos-delay="240">
+            <img src="img/destinations/dubai.webp" alt="Dubai skyline at dusk" loading="lazy">
+            <div class="dest-info">
+              <span class="loc"><span class="ic ic-pin"></span>UAE</span>
+              <h3>Dubai</h3>
+              <div class="dest-meta">
+                <span class="price">₹54,999<small>per person</small></span>
+                <span class="rating"><span class="ic ic-star"></span>4.7</span>
+              </div>
+              <a href="pricing.html" class="dest-explore">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="dest-card" data-aos="fade-up">
+            <img src="img/destinations/newzealand.webp" alt="Misty fjords of New Zealand" loading="lazy">
+            <div class="dest-info">
+              <span class="loc"><span class="ic ic-pin"></span>New Zealand</span>
+              <h3>New Zealand</h3>
+              <div class="dest-meta">
+                <span class="price">₹99,999<small>per person</small></span>
+                <span class="rating"><span class="ic ic-star"></span>4.9</span>
+              </div>
+              <a href="pricing.html" class="dest-explore">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="dest-card" data-aos="fade-up" data-aos-delay="80">
+            <img src="img/destinations/paris.webp" alt="Eiffel Tower in Paris" loading="lazy">
+            <div class="dest-info">
+              <span class="loc"><span class="ic ic-pin"></span>France</span>
+              <h3>Paris</h3>
+              <div class="dest-meta">
+                <span class="price">₹69,999<small>per person</small></span>
+                <span class="rating"><span class="ic ic-star"></span>4.6</span>
+              </div>
+              <a href="pricing.html" class="dest-explore">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="dest-card" data-aos="fade-up" data-aos-delay="160">
+            <img src="img/destinations/thailand.webp" alt="Longtail boats on a Thai beach" loading="lazy">
+            <div class="dest-info">
+              <span class="loc"><span class="ic ic-pin"></span>Thailand</span>
+              <h3>Thailand</h3>
+              <div class="dest-meta">
+                <span class="price">₹39,999<small>per person</small></span>
+                <span class="rating"><span class="ic ic-star"></span>4.8</span>
+              </div>
+              <a href="pricing.html" class="dest-explore">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="dest-card" data-aos="fade-up" data-aos-delay="240">
+            <img src="img/destinations/manali.webp" alt="Himalayan peaks near Manali" loading="lazy">
+            <div class="dest-info">
+              <span class="loc"><span class="ic ic-pin"></span>India</span>
+              <h3>Manali</h3>
+              <div class="dest-meta">
+                <span class="price">₹24,999<small>per person</small></span>
+                <span class="rating"><span class="ic ic-star"></span>4.7</span>
+              </div>
+              <a href="pricing.html" class="dest-explore">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Activities ===== -->
+    <section class="section section-soft" id="activities">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="kicker center">Adventure Activities</span>
+          <h2 class="section-title">Choose Your <span class="accent-blue">Adventure</span></h2>
+          <p class="section-sub">Eight ways to feel alive — pick your thrill and we'll handle everything else.</p>
+        </div>
+        <div class="act-grid">
+          <article class="act-card" data-aos="fade-up">
+            <div class="act-media"><img src="img/activities/trekking.webp" alt="Trekkers on a mountain ridge" loading="lazy"><span class="act-icon"><span class="ic ic-mountain"></span></span></div>
+            <div class="act-body">
+              <h3>Mountain Trekking</h3>
+              <p>Guided high-altitude trails through the Himalayas, Alps and Andes with certified mountaineers.</p>
+              <a href="services.html" class="act-link">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="act-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="act-media"><img src="img/activities/scuba.webp" alt="Scuba diver among coral reefs" loading="lazy"><span class="act-icon"><span class="ic ic-globe"></span></span></div>
+            <div class="act-body">
+              <h3>Scuba Diving</h3>
+              <p>PADI-certified dives over coral gardens, wrecks and drift sites in the world's clearest waters.</p>
+              <a href="services.html" class="act-link">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="act-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="act-media"><img src="img/activities/paragliding.webp" alt="Paraglider soaring above valleys" loading="lazy"><span class="act-icon"><span class="ic ic-plane"></span></span></div>
+            <div class="act-body">
+              <h3>Paragliding</h3>
+              <p>Tandem flights over alpine valleys and coastlines — the closest you can get to flying.</p>
+              <a href="services.html" class="act-link">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="act-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="act-media"><img src="img/activities/camping.webp" alt="Tent glowing under starry sky" loading="lazy"><span class="act-icon"><span class="ic ic-tent"></span></span></div>
+            <div class="act-body">
+              <h3>Camping</h3>
+              <p>Luxury camps under billion-star skies, from desert dunes to pine forests and lakesides.</p>
+              <a href="services.html" class="act-link">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="act-card" data-aos="fade-up">
+            <div class="act-media"><img src="img/activities/safari.webp" alt="Elephants on safari savanna" loading="lazy"><span class="act-icon"><span class="ic ic-compass"></span></span></div>
+            <div class="act-body">
+              <h3>Wildlife Safari</h3>
+              <p>Track big cats, elephants and rare birds with expert naturalists in iconic reserves.</p>
+              <a href="services.html" class="act-link">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="act-card" data-aos="fade-up" data-aos-delay="80">
+            <div class="act-media"><img src="img/activities/rafting.webp" alt="Raft crashing through rapids" loading="lazy"><span class="act-icon"><span class="ic ic-globe"></span></span></div>
+            <div class="act-body">
+              <h3>River Rafting</h3>
+              <p>Grade II–IV rapids on glacier-fed rivers — adrenaline with world-class safety crews.</p>
+              <a href="services.html" class="act-link">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="act-card" data-aos="fade-up" data-aos-delay="160">
+            <div class="act-media"><img src="img/activities/skiing.webp" alt="Skier carving fresh powder" loading="lazy"><span class="act-icon"><span class="ic ic-star"></span></span></div>
+            <div class="act-body">
+              <h3>Skiing</h3>
+              <p>Powder days in Gulmarg, Zermatt and Niseko with rentals, lifts and lessons included.</p>
+              <a href="services.html" class="act-link">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="act-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="act-media"><img src="img/activities/beach.webp" alt="Tropical beach with palm trees" loading="lazy"><span class="act-icon"><span class="ic ic-heart"></span></span></div>
+            <div class="act-body">
+              <h3>Beach Adventure</h3>
+              <p>Surf breaks, kayak lagoons and island-hopping days across Asia's finest coastlines.</p>
+              <a href="services.html" class="act-link">Explore <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why choose us ===== -->
+    <section class="section" id="why">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="kicker center">Why Stackly Adventure</span>
+          <h2 class="section-title">Why Travel <span class="accent">With Us?</span></h2>
+          <p class="section-sub">A decade of obsession over details, so your only job is to say yes to the adventure.</p>
+        </div>
+        <div class="why-grid">
+          <article class="why-card" data-aos="fade-up">
+            <span class="why-icon"><span class="ic ic-compass"></span></span>
+            <h3>Expert Local Guides</h3>
+            <p>Certified guides who grew up on these trails, reefs and rivers — and know every hidden turn.</p>
+          </article>
+          <article class="why-card" data-aos="fade-up" data-aos-delay="80">
+            <span class="why-icon"><span class="ic ic-wallet"></span></span>
+            <h3>Best Price Guarantee</h3>
+            <p>Find the same itinerary cheaper anywhere and we'll refund twice the difference. Simple.</p>
+          </article>
+          <article class="why-card" data-aos="fade-up" data-aos-delay="160">
+            <span class="why-icon"><span class="ic ic-headset"></span></span>
+            <h3>24/7 Travel Support</h3>
+            <p>Real humans on call around the clock, in your timezone, in your language, on any mountain.</p>
+          </article>
+          <article class="why-card" data-aos="fade-up">
+            <span class="why-icon"><span class="ic ic-shield"></span></span>
+            <h3>Safe &amp; Secure Trips</h3>
+            <p>Audited equipment, satellite check-ins and medical backup on every high-adventure itinerary.</p>
+          </article>
+          <article class="why-card" data-aos="fade-up" data-aos-delay="80">
+            <span class="why-icon"><span class="ic ic-award"></span></span>
+            <h3>Handpicked Experiences</h3>
+            <p>Every route, lodge and meal is personally tested by our team before it earns a place here.</p>
+          </article>
+          <article class="why-card" data-aos="fade-up" data-aos-delay="160">
+            <span class="why-icon"><span class="ic ic-calendar"></span></span>
+            <h3>Easy Online Booking</h3>
+            <p>Book in three minutes, pay in instalments, reschedule free up to 15 days before departure.</p>
+          </article>
+        </div>
+
+        <div class="counters-band" data-aos="zoom-in">
+          <div class="counter"><span class="num" data-count="10" data-suffix="+">0</span><small>Years Experience</small></div>
+          <div class="counter"><span class="num" data-count="50" data-suffix="K+">0</span><small>Happy Travelers</small></div>
+          <div class="counter"><span class="num" data-count="150" data-suffix="+">0</span><small>Destinations</small></div>
+          <div class="counter"><span class="num" data-count="98" data-suffix="%">0</span><small>5-Star Reviews</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About preview ===== -->
+    <section class="section section-soft" id="about">
+      <div class="container about-wrap">
+        <div class="about-media" data-aos="fade-right">
+          <img class="main-img" src="img/about/about-main.webp" alt="Traveler with backpack on a mountain road" loading="lazy">
+          <img class="float-img" src="img/about/about-float.webp" alt="Canoes on a turquoise alpine lake" loading="lazy">
+          <div class="exp-badge"><div class="inner"><b>10+</b><small>Years of Adventure</small></div></div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <span class="kicker">About Stackly Adventure</span>
+          <h2 class="section-title">We Turn Wanderlust Into <span class="accent">Unforgettable Journeys</span></h2>
+          <p>Founded in Chennai by a crew of trekkers, divers and pilots, Stackly Adventure has grown into one of Asia's most trusted adventure travel companies — without ever losing its campfire soul.</p>
+          <p>From weekend escapes to month-long expeditions, we design journeys that push your limits and pamper your senses.</p>
+          <ul class="about-points">
+            <li><span class="ic ic-check"></span>Certified adventure leaders</li>
+            <li><span class="ic ic-check"></span>Small groups, max 12 travelers</li>
+            <li><span class="ic ic-check"></span>Carbon-neutral itineraries</li>
+            <li><span class="ic ic-check"></span>Flexible rescheduling</li>
+          </ul>
+          <div class="about-stats">
+            <div><span class="num" data-count="10" data-suffix="+">0</span><small>Years Experience</small></div>
+            <div><span class="num" data-count="50" data-suffix="K+">0</span><small>Happy Travelers</small></div>
+            <div><span class="num" data-count="150" data-suffix="+">0</span><small>Destinations</small></div>
+          </div>
+          <a href="about.html" class="btn btn-ocean">Discover Our Story <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="kicker center">What We Do</span>
+          <h2 class="section-title">Our Travel <span class="accent">Services</span></h2>
+          <p class="section-sub">One team for the whole journey — from the first visa form to the last airport wave goodbye.</p>
+        </div>
+        <div class="svc-grid">
+          <article class="svc-card" data-aos="fade-up"><span class="svc-icon"><span class="ic ic-plane"></span></span><h3>Flight Booking</h3><p>Best-route fares, flexible dates and instant e-tickets across 900+ airlines worldwide.</p><a href="services.html" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="70"><span class="svc-icon"><span class="ic ic-hotel"></span></span><h3>Hotel Booking</h3><p>From boutique lodges to overwater villas — verified stays at member-only rates.</p><a href="services.html" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="140"><span class="svc-icon"><span class="ic ic-mountain"></span></span><h3>Adventure Packages</h3><p>Signature multi-day expeditions with guides, gear, permits and permits sorted.</p><a href="services.html" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="210"><span class="svc-icon"><span class="ic ic-map"></span></span><h3>Tour Planning</h3><p>Custom itineraries built by destination experts around your pace and budget.</p><a href="services.html" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up"><span class="svc-icon"><span class="ic ic-shield"></span></span><h3>Travel Insurance</h3><p>High-altitude and water-sport coverage with 24-hour emergency assistance.</p><a href="services.html" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="70"><span class="svc-icon"><span class="ic ic-car"></span></span><h3>Airport Transfer</h3><p>Meet-and-greet pickups, private SUVs and group coaches at 400+ airports.</p><a href="services.html" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="140"><span class="svc-icon"><span class="ic ic-visa"></span></span><h3>Visa Assistance</h3><p>Document checks, application filing and interview prep with 98% approval.</p><a href="services.html" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="210"><span class="svc-icon"><span class="ic ic-briefcase"></span></span><h3>Corporate Travel</h3><p>Team offsites, incentive trips and MICE logistics with dedicated managers.</p><a href="services.html" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Packages ===== -->
+    <section class="section section-soft" id="packages">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="kicker center">Travel Packages</span>
+          <h2 class="section-title">Premium <span class="accent">Packages</span> For Every Explorer</h2>
+          <p class="section-sub">Transparent pricing, zero hidden fees, and itineraries refined over hundreds of departures.</p>
+        </div>
+        <div class="pkg-grid">
+          <article class="pkg-card" data-aos="fade-up">
+            <div class="pkg-media"><img src="img/destinations/thailand.webp" alt="Thailand island hopping" loading="lazy"></div>
+            <div class="pkg-body">
+              <div class="pkg-head"><h3>Explorer</h3><span class="rating"><span class="ic ic-star"></span>4.7</span></div>
+              <p class="pkg-duration"><span class="ic ic-clock"></span>3 Days / 2 Nights · Thailand</p>
+              <p class="pkg-price"><b>₹19,999</b> <span>/ per person</span></p>
+              <ul class="pkg-features">
+                <li><span class="ic ic-check"></span>3-star beachfront stay</li>
+                <li><span class="ic ic-check"></span>Island hopping tour</li>
+                <li><span class="ic ic-check"></span>Breakfast &amp; airport transfers</li>
+                <li><span class="ic ic-check"></span>Group snorkeling session</li>
+              </ul>
+              <div class="pkg-actions">
+                <a href="login.html" class="btn btn-primary">Book Now</a>
+                <a href="pricing.html" class="btn btn-outline">Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="pkg-card featured" data-aos="fade-up" data-aos-delay="120">
+            <span class="pkg-badge glow-accent">Recommended</span>
+            <div class="pkg-media"><img src="img/destinations/bali.webp" alt="Bali jungle and rice terraces" loading="lazy"></div>
+            <div class="pkg-body">
+              <div class="pkg-head"><h3>Adventure</h3><span class="rating"><span class="ic ic-star"></span>4.9</span></div>
+              <p class="pkg-duration"><span class="ic ic-clock"></span>5 Days / 4 Nights · Bali</p>
+              <p class="pkg-price"><b>₹39,999</b> <span>/ per person</span></p>
+              <ul class="pkg-features">
+                <li><span class="ic ic-check"></span>4-star jungle resort</li>
+                <li><span class="ic ic-check"></span>Mt. Batur sunrise trek</li>
+                <li><span class="ic ic-check"></span>White-water rafting + ATV</li>
+                <li><span class="ic ic-check"></span>All meals &amp; private driver</li>
+                <li><span class="ic ic-check"></span>Travel insurance included</li>
+              </ul>
+              <div class="pkg-actions">
+                <a href="login.html" class="btn btn-primary">Book Now</a>
+                <a href="pricing.html" class="btn btn-outline">Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="pkg-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="pkg-media"><img src="img/destinations/switzerland.webp" alt="Swiss Alps panorama" loading="lazy"></div>
+            <div class="pkg-body">
+              <div class="pkg-head"><h3>Luxury</h3><span class="rating"><span class="ic ic-star"></span>5.0</span></div>
+              <p class="pkg-duration"><span class="ic ic-clock"></span>7 Days / 6 Nights · Switzerland</p>
+              <p class="pkg-price"><b>₹79,999</b> <span>/ per person</span></p>
+              <ul class="pkg-features">
+                <li><span class="ic ic-check"></span>5-star alpine chalets</li>
+                <li><span class="ic ic-check"></span>Glacier express first class</li>
+                <li><span class="ic ic-check"></span>Private paragliding session</li>
+                <li><span class="ic ic-check"></span>Gourmet dining &amp; spa day</li>
+              </ul>
+              <div class="pkg-actions">
+                <a href="login.html" class="btn btn-primary">Book Now</a>
+                <a href="pricing.html" class="btn btn-outline">Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section testi-section" id="testimonials">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="kicker center">Traveler Stories</span>
+          <h2 class="section-title">What Our <span class="accent-blue">Travelers</span> Say</h2>
+        </div>
+        <div class="testi-slider" data-aos="zoom-in">
+          <div class="testi-track">
+            <div class="testi-slide">
+              <div class="testi-card">
+                <span class="q-icon"><span class="ic ic-quote"></span></span>
+                <p class="testi-text">The Manali snow expedition was flawlessly run — guides knew exactly when the weather window would open. Summit sunrise was the single best morning of my life.</p>
+                <div class="testi-stars"><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span></div>
+                <div class="testi-person"><img class="avatar" src="img/avatars/a1.webp" alt="Priya Sharma" loading="lazy"><div class="who"><b>Priya Sharma</b><small>Mumbai, India</small></div></div>
+              </div>
+            </div>
+            <div class="testi-slide">
+              <div class="testi-card">
+                <span class="q-icon"><span class="ic ic-quote"></span></span>
+                <p class="testi-text">Booked the Bali package for our honeymoon. Private driver, jungle resort, that sunrise trek — every detail felt handcrafted. Worth every rupee.</p>
+                <div class="testi-stars"><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span></div>
+                <div class="testi-person"><img class="avatar" src="img/avatars/a2.webp" alt="James Carter" loading="lazy"><div class="who"><b>James Carter</b><small>London, UK</small></div></div>
+              </div>
+            </div>
+            <div class="testi-slide">
+              <div class="testi-card">
+                <span class="q-icon"><span class="ic ic-quote"></span></span>
+                <p class="testi-text">As a solo traveler, safety was my top concern. Satellite check-ins and a 24/7 support line meant my parents slept well and I paraglided over the Alps.</p>
+                <div class="testi-stars"><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span></div>
+                <div class="testi-person"><img class="avatar" src="img/avatars/a3.webp" alt="Ananya Iyer" loading="lazy"><div class="who"><b>Ananya Iyer</b><small>Bengaluru, India</small></div></div>
+              </div>
+            </div>
+            <div class="testi-slide">
+              <div class="testi-card">
+                <span class="q-icon"><span class="ic ic-quote"></span></span>
+                <p class="testi-text">Our corporate offsite for 40 people in Thailand ran like a Swiss train. The Stackly team even rescued a lost passport situation in under three hours.</p>
+                <div class="testi-stars"><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span></div>
+                <div class="testi-person"><img class="avatar" src="img/avatars/a4.webp" alt="Rahul Mehta" loading="lazy"><div class="who"><b>Rahul Mehta</b><small>Singapore</small></div></div>
+              </div>
+            </div>
+            <div class="testi-slide">
+              <div class="testi-card">
+                <span class="q-icon"><span class="ic ic-quote"></span></span>
+                <p class="testi-text">Maldives scuba package exceeded everything — whale sharks on day two! The instructors were patient, funny and absolute pros underwater.</p>
+                <div class="testi-stars"><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span><span class="ic ic-star"></span></div>
+                <div class="testi-person"><img class="avatar" src="img/avatars/a5.webp" alt="Sofia Müller" loading="lazy"><div class="who"><b>Sofia Müller</b><small>Berlin, Germany</small></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-nav">
+            <button class="testi-arrow prev" aria-label="Previous review"><span class="ic ic-arrow-right"></span></button>
+            <div class="testi-dots"></div>
+            <button class="testi-arrow next" aria-label="Next review"><span class="ic ic-arrow-right"></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Blog ===== -->
+    <section class="section section-soft" id="blog">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="kicker center">From The Journal</span>
+          <h2 class="section-title">Travel Stories &amp; <span class="accent">Inspiration</span></h2>
+          <p class="section-sub">Field notes, guides and photography from the trails our team walks every season.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card" data-aos="fade-up">
+            <div class="blog-media"><img src="img/blog/blog-1.webp" alt="Traveler planning a route with map" loading="lazy"><span class="blog-cat">Guides</span></div>
+            <div class="blog-body">
+              <div class="blog-meta"><span><span class="ic ic-calendar"></span>Mar 12, 2026</span><span><span class="ic ic-clock"></span>8 min read</span></div>
+              <h3><a href="blog.html">10 Best Adventure Destinations for 2026</a></h3>
+              <p>From Patagonia's granite towers to the lava fields of Iceland — our ranked list of the year's must-explore places.</p>
+              <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="blog-media"><img src="img/blog/blog-2.webp" alt="Misty mountain trekking trail" loading="lazy"><span class="blog-cat">Trekking</span></div>
+            <div class="blog-body">
+              <div class="blog-meta"><span><span class="ic ic-calendar"></span>Feb 28, 2026</span><span><span class="ic ic-clock"></span>12 min read</span></div>
+              <h3><a href="blog.html">Complete Guide to Mountain Trekking</a></h3>
+              <p>Training plans, gear checklists and acclimatization science — everything before your first 4,000m.</p>
+              <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+          <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-media"><img src="img/blog/blog-3.webp" alt="White sand beach in Asia" loading="lazy"><span class="blog-cat">Beaches</span></div>
+            <div class="blog-body">
+              <div class="blog-meta"><span><span class="ic ic-calendar"></span>Feb 10, 2026</span><span><span class="ic ic-clock"></span>6 min read</span></div>
+              <h3><a href="blog.html">Best Beaches in Asia (Beyond Bali)</a></h3>
+              <p>Secret coves in the Philippines, Sri Lanka's surf south and the Andamans' glass-clear shallows.</p>
+              <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-40" data-aos="fade-up">
+          <a href="blog.html" class="btn btn-ocean">View All Stories <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="kicker center">Good To Know</span>
+          <h2 class="section-title">Frequently Asked <span class="accent">Questions</span></h2>
+        </div>
+        <div class="faq-wrap" data-aos="fade-up">
+          <div class="faq-item">
+            <button class="faq-q">How do I book a trip? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Pick a package or destination, choose your dates and travelers, and pay a 20% advance online. Your dedicated travel designer confirms everything within 24 hours — no phone calls required unless you want one.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Can I cancel my booking? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Yes. Full refund up to 30 days before departure, 50% up to 15 days, and free rescheduling up to 15 days before your trip. Adventure credits never expire.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Do you provide travel insurance? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Every Adventure and Luxury package includes high-altitude and water-sport insurance. For Explorer packages you can add coverage at checkout for a small fee.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Can I customize my travel package? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Absolutely — every itinerary is a starting point. Add days, swap activities, upgrade stays or go fully private. Custom quotes are free and delivered within 48 hours.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Do you provide airport pickup? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>Yes, meet-and-greet airport transfers are included in all packages. A driver with your name board will be waiting, even if your flight lands at 3 AM.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">What payment methods do you accept? <span class="fq-icon"><span class="ic ic-chevron-down"></span></span></button>
+            <div class="faq-a"><p>UPI, all major credit/debit cards, net banking, and EMI plans for packages above ₹30,000. International travelers can pay via cards or wire transfer.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Newsletter ===== -->
+    <section class="section" id="newsletter" style="padding-top:0">
+      <div class="container">
+        <div class="newsletter" data-aos="zoom-in">
+          <span class="kicker center" style="color:var(--gold)">Newsletter</span>
+          <h2>Get Travel Inspiration<br>Straight To Your Inbox</h2>
+          <p>One beautifully designed email a week — secret spots, flash deals and stories from the trail. No spam, ever.</p>
+          <form class="nl-form">
+            <input type="email" placeholder="Enter your email" aria-label="Email address" required>
+            <button type="submit" class="btn btn-primary"><span class="ic ic-send"></span>Subscribe</button>
+          </form>
+          <p class="nl-msg"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" data-no-transition>
+            <img src="img/logo.webp" alt="">
+            <span class="logo-text"><b>STACKLY</b></span>
+          </a>
+          <p>Premium adventure travel crafted in Chennai, explored worldwide. Trek higher, dive deeper, dream bigger.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><span class="ic ic-facebook"></span></a>
+            <a href="#" aria-label="Instagram"><span class="ic ic-instagram"></span></a>
+            <a href="#" aria-label="YouTube"><span class="ic ic-youtube"></span></a>
+            <a href="#" aria-label="Twitter / X"><span class="ic ic-twitter"></span></a>
+            <a href="#" aria-label="LinkedIn"><span class="ic ic-linkedin"></span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="about.html#story">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#destinations">Destinations</a></li>
+            <li><a href="index.html#activities">Adventure</a></li>
+            <li><a href="pricing.html">Packages</a></li>
+            <li><a href="blog.html">Travel Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><span class="ic ic-pin"></span>Chennai, Tamil Nadu, India</li>
+            <li><span class="ic ic-phone"></span>+91 98765 43210</li>
+            <li><span class="ic ic-mail"></span>hello@stacklyadventure.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> Stackly Adventure. All rights reserved.</span>
+        <span><a href="faq.html">Privacy Policy</a> · <a href="faq.html">Terms of Travel</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backTop" aria-label="Back to top"><span class="ic ic-arrow-right"></span></button>
+
+  <!-- Video modal -->
+  <div class="video-modal">
+    <button class="vm-close" aria-label="Close video"><span class="ic ic-close"></span></button>
+    <div class="vm-inner">
+      <iframe data-src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="Stackly Adventure showreel" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="js/vendor/aos.js"></script>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Stackly Adventure</title>
+  <meta name="description" content="Login to your Stackly Adventure account to manage bookings, wishlists and adventure packages.">
+  <meta name="keywords" content="login, stackly adventure account">
+  <link rel="icon" href="img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body>
+  <main class="auth-page">
+    <div class="auth-visual">
+      <img class="bg" src="img/activities/paragliding.webp" alt="Paraglider over mountain valley">
+      <div class="av-content">
+        <a href="index.html" class="logo" data-no-transition>
+          <img src="img/logo.webp" alt="">
+          <span class="logo-text"><b>STACKLY</b></span>
+        </a>
+        <h2>The Mountains Are Calling.<br><span class="script-accent" style="font-size:1.2em">Welcome Back.</span></h2>
+        <p>Log in to manage your bookings, save dream destinations and pick up your journey right where you left off.</p>
+      </div>
+    </div>
+
+    <div class="auth-side">
+      <div class="auth-card" data-aos="fade-up">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <a href="index.html" class="logo" data-no-transition>
+            <img src="img/logo.webp" alt="">
+            <span class="logo-text"><b>STACKLY</b></span>
+          </a>
+          <button class="icon-btn theme-toggle" style="background:var(--bg-soft);border-color:var(--line);color:var(--text-strong)" aria-label="Toggle theme"><span class="ic ic-sun sun-i"></span><span class="ic ic-moon moon-i"></span></button>
+        </div>
+        <h1>Log In</h1>
+        <p class="sub">Demo login: enter any valid email and password, then choose a role.</p>
+        <form id="loginForm" novalidate>
+          <div class="form-group">
+            <label for="lEmail">Email</label>
+            <input class="form-control" id="lEmail" name="email" type="email" placeholder="you@example.com" data-validate="required|email">
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="lPass">Password</label>
+            <div class="pw-wrap">
+              <input class="form-control" id="lPass" name="password" type="password" placeholder="Your password" data-validate="required|password">
+              <button type="button" class="pw-toggle" aria-label="Show password"><span class="ic ic-eye"></span></button>
+            </div>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="lRole">Login As</label>
+            <select class="form-control" id="lRole" name="role">
+              <option value="user">User</option>
+              <option value="seller">Seller</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="check"><input type="checkbox" name="remember" checked> Remember me</label>
+            <a href="#" onclick="showToast('Password reset link sent to your email (demo).');return false;">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary auth-btn">Log In <span class="ic ic-arrow-right"></span></button>
+        </form>
+        <div class="divider">or continue with</div>
+        <div class="social-login">
+          <a href="#" onclick="showToast('Social login is UI-only in this demo.');return false;"><span class="ic ic-globe"></span>Google</a>
+          <a href="#" onclick="showToast('Social login is UI-only in this demo.');return false;"><span class="ic ic-facebook"></span>Facebook</a>
+        </div>
+        <p class="auth-alt">New to Stackly Adventure? <a href="register.html">Create an account</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

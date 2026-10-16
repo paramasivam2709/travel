@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logging Out — Stackly Adventure</title>
+  <meta name="description" content="Logging out of your Stackly Adventure account.">
+  <meta name="keywords" content="stackly adventure dashboard">
+  <link rel="icon" href="../img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body class="dash-body">
+
+  <main class="dash-body" style="display:grid;place-items:center;min-height:100vh;text-align:center;padding:20px">
+    <div>
+      <div class="logout-brand"><img src="../img/logo.webp" alt=""><span>STACKLY</span></div>
+      <h1 style="font-family:var(--font-display);margin-bottom:10px">See You On The Trail…</h1>
+      <p style="color:var(--text-soft)">Logging you out safely.</p>
+    </div>
+  </main>
+  <script>
+    localStorage.removeItem("sa_session");
+    setTimeout(() => location.href = "../login.html", 1400);
+  </script>
+  <style>.logout-brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:20px;font-family:var(--font-display);font-size:1.5rem;font-weight:800;letter-spacing:.08em;color:var(--text-strong);animation:float 2s ease-in-out infinite}.logout-brand img{width:52px;height:52px}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}</style>
+</body>
+</html>

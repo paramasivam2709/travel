@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Services — Stackly Adventure</title>
+  <meta name="description" content="Adventure tours, hotel and flight booking, visa assistance, travel insurance, airport transfers, corporate travel and custom tours by Stackly Adventure.">
+  <meta name="keywords" content="adventure tours, flight booking, hotel booking, visa assistance, travel insurance">
+  <link rel="icon" href="img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" data-no-transition>
+        <img src="img/logo.webp" alt="">
+        <span class="logo-text"><b>STACKLY</b></span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn search-btn" aria-label="Search"><span class="ic ic-search"></span></button>
+        <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><span class="ic ic-sun sun-i"></span><span class="ic ic-moon moon-i"></span></button>
+        <a href="login.html" class="login-link"><span class="ic ic-user"></span>Login</a>
+        <a href="pricing.html" class="btn btn-primary btn-sm"><span class="ic ic-plane"></span>Book Now</a>
+        <button class="hamburger" aria-label="Open menu"><span class="ic ic-menu"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Mobile nav ===== -->
+  <nav class="mobile-nav" aria-label="Mobile">
+    <button class="mobile-close" aria-label="Close menu"><span class="ic ic-close"></span></button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#destinations">Destinations</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <div class="m-actions">
+      <a href="login.html" class="btn btn-ghost">Login</a>
+      <a href="pricing.html" class="btn btn-primary">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- ===== Search overlay ===== -->
+  <div class="search-overlay">
+    <button class="search-close" aria-label="Close search"><span class="ic ic-close"></span></button>
+    <div class="search-box">
+      <form role="search">
+        <input type="text" placeholder="Search destinations, adventures, packages…" aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
+      <p class="search-hint">Try "Bali", "Trekking", "Maldives" or "Skiing"</p>
+    </div>
+  </div>
+  <main>
+    <!-- ===== Page hero ===== -->
+    <section class="page-hero">
+      <div class="ph-bg"><img src="img/activities/camping.webp" alt="" loading="lazy"></div>
+      <div class="container">
+        <span class="kicker" style="color:var(--gold)">Stackly Adventure</span>
+        <h1 data-aos="fade-up">Services Built For <span class="accent">Bold Travelers</span></h1>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Services</span></nav>
+      </div>
+    </section>
+
+    <section class="section" style="padding-bottom:40px">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="kicker center">Everything Under One Roof</span>
+          <h2 class="section-title">Eight Services. <span class="accent">Zero Headaches.</span></h2>
+          <p class="section-sub">From the first visa form to the last airport goodbye — one accountable team for the entire journey.</p>
+        </div>
+        <div class="svc-grid">
+          <article class="svc-card" data-aos="fade-up"><span class="svc-icon"><span class="ic ic-mountain"></span></span><h3>Adventure Tours</h3><p>Guided treks, climbs and expeditions with all permits and gear sorted.</p><a href="#svc-detail" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="70"><span class="svc-icon"><span class="ic ic-hotel"></span></span><h3>Hotel Booking</h3><p>Verified boutique stays and luxury resorts at member-only rates.</p><a href="#svc-detail" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="140"><span class="svc-icon"><span class="ic ic-plane"></span></span><h3>Flight Booking</h3><p>Best-route fares across 900+ airlines with flexible-date support.</p><a href="#svc-detail" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="210"><span class="svc-icon"><span class="ic ic-visa"></span></span><h3>Visa Assistance</h3><p>Document checks, filing and interview prep with 98% approval.</p><a href="#svc-detail" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up"><span class="svc-icon"><span class="ic ic-shield"></span></span><h3>Travel Insurance</h3><p>Adventure-sport coverage with 24-hour emergency assistance.</p><a href="#svc-detail" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="70"><span class="svc-icon"><span class="ic ic-briefcase"></span></span><h3>Corporate Travel</h3><p>Offsites and incentive trips with dedicated account managers.</p><a href="#svc-detail" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="140"><span class="svc-icon"><span class="ic ic-car"></span></span><h3>Airport Transfers</h3><p>Meet-and-greet pickups at 400+ airports, day or night.</p><a href="#svc-detail" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+          <article class="svc-card" data-aos="fade-up" data-aos-delay="210"><span class="svc-icon"><span class="ic ic-map"></span></span><h3>Custom Tours</h3><p>Fully private itineraries built around your pace and budget.</p><a href="#svc-detail" class="svc-link">Learn More <span class="ic ic-arrow-right"></span></a></article>
+        </div>
+      </div>
+    </section>
+    <div id="svc-detail"></div>
+
+    <section class="section section-soft">
+      <div class="container grid-2">
+        <div data-aos="fade-right">
+          <img class="img-fluid" src="img/activities/trekking.webp" alt="Adventure Tours" loading="lazy" style="box-shadow:var(--shadow-md)">
+        </div>
+        <div data-aos="fade-left">
+          <span class="svc-icon"><span class="ic ic-mountain"></span></span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">Adventure Tours</h2>
+          <p style="color:var(--text-soft);margin-bottom:22px">Multi-day treks, climbs and expeditions led by certified mountaineers. Permits, porters, gear and acclimatization planning — all handled.</p>
+          <ul class="about-points" style="margin-bottom:30px"><li><span class="ic ic-check"></span>Small groups of max 12</li><li><span class="ic ic-check"></span>IFMGA-certified lead guides</li><li><span class="ic ic-check"></span>Satellite communication on route</li><li><span class="ic ic-check"></span>Emergency evacuation cover</li></ul>
+          <a href="contact.html" class="btn btn-ocean">Enquire Now <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2" style="direction:rtl">
+        <div data-aos="fade-right" style="direction:ltr">
+          <img class="img-fluid" src="img/destinations/maldives.webp" alt="Hotel Booking" loading="lazy" style="box-shadow:var(--shadow-md)">
+        </div>
+        <div data-aos="fade-left" style="direction:ltr">
+          <span class="svc-icon"><span class="ic ic-hotel"></span></span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">Hotel Booking</h2>
+          <p style="color:var(--text-soft);margin-bottom:22px">Hand-tested stays from boutique jungle lodges to overwater villas, booked at negotiated member rates you won't find on aggregator sites.</p>
+          <ul class="about-points" style="margin-bottom:30px"><li><span class="ic ic-check"></span>Verified & personally inspected</li><li><span class="ic ic-check"></span>Member-only negotiated rates</li><li><span class="ic ic-check"></span>Free cancellation options</li><li><span class="ic ic-check"></span>Room upgrades where available</li></ul>
+          <a href="contact.html" class="btn btn-ocean">Enquire Now <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container grid-2">
+        <div data-aos="fade-right">
+          <img class="img-fluid" src="img/destinations/dubai.webp" alt="Flight Booking" loading="lazy" style="box-shadow:var(--shadow-md)">
+        </div>
+        <div data-aos="fade-left">
+          <span class="svc-icon"><span class="ic ic-plane"></span></span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">Flight Booking</h2>
+          <p style="color:var(--text-soft);margin-bottom:22px">Smart fare tracking across 900+ airlines with flexible-date search, instant e-tickets and free date-change support.</p>
+          <ul class="about-points" style="margin-bottom:30px"><li><span class="ic ic-check"></span>Best-route fare algorithms</li><li><span class="ic ic-check"></span>Instant e-ticket delivery</li><li><span class="ic ic-check"></span>Free rescheduling support</li><li><span class="ic ic-check"></span>Group fare negotiation</li></ul>
+          <a href="contact.html" class="btn btn-ocean">Enquire Now <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2" style="direction:rtl">
+        <div data-aos="fade-right" style="direction:ltr">
+          <img class="img-fluid" src="img/destinations/paris.webp" alt="Visa Assistance" loading="lazy" style="box-shadow:var(--shadow-md)">
+        </div>
+        <div data-aos="fade-left" style="direction:ltr">
+          <span class="svc-icon"><span class="ic ic-visa"></span></span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">Visa Assistance</h2>
+          <p style="color:var(--text-soft);margin-bottom:22px">End-to-end visa filing with document pre-checks, appointment booking and mock interviews — a 98% first-time approval rate.</p>
+          <ul class="about-points" style="margin-bottom:30px"><li><span class="ic ic-check"></span>Document checklist & pre-check</li><li><span class="ic ic-check"></span>Appointment scheduling</li><li><span class="ic ic-check"></span>Mock interview sessions</li><li><span class="ic ic-check"></span>Status tracking dashboard</li></ul>
+          <a href="contact.html" class="btn btn-ocean">Enquire Now <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container grid-2">
+        <div data-aos="fade-right">
+          <img class="img-fluid" src="img/activities/paragliding.webp" alt="Travel Insurance" loading="lazy" style="box-shadow:var(--shadow-md)">
+        </div>
+        <div data-aos="fade-left">
+          <span class="svc-icon"><span class="ic ic-shield"></span></span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">Travel Insurance</h2>
+          <p style="color:var(--text-soft);margin-bottom:22px">High-altitude trekking, scuba and adventure-sport coverage with 24-hour multilingual emergency assistance.</p>
+          <ul class="about-points" style="margin-bottom:30px"><li><span class="ic ic-check"></span>Adventure sports covered</li><li><span class="ic ic-check"></span>24h emergency helpline</li><li><span class="ic ic-check"></span>Cashless hospital network</li><li><span class="ic ic-check"></span>Trip cancellation cover</li></ul>
+          <a href="contact.html" class="btn btn-ocean">Enquire Now <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2" style="direction:rtl">
+        <div data-aos="fade-right" style="direction:ltr">
+          <img class="img-fluid" src="img/destinations/thailand.webp" alt="Corporate Travel" loading="lazy" style="box-shadow:var(--shadow-md)">
+        </div>
+        <div data-aos="fade-left" style="direction:ltr">
+          <span class="svc-icon"><span class="ic ic-briefcase"></span></span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">Corporate Travel</h2>
+          <p style="color:var(--text-soft);margin-bottom:22px">Offsites, incentive trips and MICE logistics for teams of 10 to 500, with a dedicated account manager.</p>
+          <ul class="about-points" style="margin-bottom:30px"><li><span class="ic ic-check"></span>Dedicated account manager</li><li><span class="ic ic-check"></span>GST-compliant invoicing</li><li><span class="ic ic-check"></span>Custom team-building programs</li><li><span class="ic ic-check"></span>On-ground event crew</li></ul>
+          <a href="contact.html" class="btn btn-ocean">Enquire Now <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container grid-2">
+        <div data-aos="fade-right">
+          <img class="img-fluid" src="img/destinations/newzealand.webp" alt="Airport Transfers" loading="lazy" style="box-shadow:var(--shadow-md)">
+        </div>
+        <div data-aos="fade-left">
+          <span class="svc-icon"><span class="ic ic-car"></span></span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">Airport Transfers</h2>
+          <p style="color:var(--text-soft);margin-bottom:22px">Meet-and-greet pickups at 400+ airports — private SUVs, luxury coaches and even helicopter transfers where the road ends.</p>
+          <ul class="about-points" style="margin-bottom:30px"><li><span class="ic ic-check"></span>Flight-delay tracking</li><li><span class="ic ic-check"></span>Private & shared options</li><li><span class="ic ic-check"></span>Child seats on request</li><li><span class="ic ic-check"></span>24/7 driver hotline</li></ul>
+          <a href="contact.html" class="btn btn-ocean">Enquire Now <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2" style="direction:rtl">
+        <div data-aos="fade-right" style="direction:ltr">
+          <img class="img-fluid" src="img/services/adventure-tours.webp" alt="Custom Tours" loading="lazy" style="box-shadow:var(--shadow-md)">
+        </div>
+        <div data-aos="fade-left" style="direction:ltr">
+          <span class="svc-icon"><span class="ic ic-map"></span></span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">Custom Tours</h2>
+          <p style="color:var(--text-soft);margin-bottom:22px">Your bucket list, our blueprint. Destination experts build fully private itineraries around your pace, taste and budget.</p>
+          <ul class="about-points" style="margin-bottom:30px"><li><span class="ic ic-check"></span>Free custom quote in 48h</li><li><span class="ic ic-check"></span>Private guide & vehicle</li><li><span class="ic ic-check"></span>Any pace, any budget</li><li><span class="ic ic-check"></span>Unlimited revisions</li></ul>
+          <a href="contact.html" class="btn btn-ocean">Enquire Now <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band" data-aos="zoom-in">
+          <div class="cta-bg"><img src="img/hero/hero-main.webp" alt="" loading="lazy"></div>
+          <h2>Ready For Your Next <span class="script-accent">Adventure?</span></h2>
+          <p>Tell us where your heart points — we'll build the journey, handle the logistics, and you keep the memories.</p>
+          <a href="contact.html" class="btn btn-primary">Plan My Trip <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" data-no-transition>
+            <img src="img/logo.webp" alt="">
+            <span class="logo-text"><b>STACKLY</b></span>
+          </a>
+          <p>Premium adventure travel crafted in Chennai, explored worldwide. Trek higher, dive deeper, dream bigger.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><span class="ic ic-facebook"></span></a>
+            <a href="#" aria-label="Instagram"><span class="ic ic-instagram"></span></a>
+            <a href="#" aria-label="YouTube"><span class="ic ic-youtube"></span></a>
+            <a href="#" aria-label="Twitter / X"><span class="ic ic-twitter"></span></a>
+            <a href="#" aria-label="LinkedIn"><span class="ic ic-linkedin"></span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="about.html#story">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#destinations">Destinations</a></li>
+            <li><a href="index.html#activities">Adventure</a></li>
+            <li><a href="pricing.html">Packages</a></li>
+            <li><a href="blog.html">Travel Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><span class="ic ic-pin"></span>Chennai, Tamil Nadu, India</li>
+            <li><span class="ic ic-phone"></span>+91 98765 43210</li>
+            <li><span class="ic ic-mail"></span>hello@stacklyadventure.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> Stackly Adventure. All rights reserved.</span>
+        <span><a href="faq.html">Privacy Policy</a> · <a href="faq.html">Terms of Travel</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backTop" aria-label="Back to top"><span class="ic ic-arrow-right"></span></button>
+  <script src="js/vendor/aos.js"></script>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

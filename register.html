@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — Stackly Adventure</title>
+  <meta name="description" content="Create your Stackly Adventure account and start planning premium adventure travel across 150+ destinations.">
+  <meta name="keywords" content="register, sign up, stackly adventure">
+  <link rel="icon" href="img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body>
+  <main class="auth-page">
+    <div class="auth-visual">
+      <img class="bg" src="img/activities/camping.webp" alt="Glowing tent under a starry night sky">
+      <div class="av-content">
+        <a href="index.html" class="logo" data-no-transition>
+          <img src="img/logo.webp" alt="">
+          <span class="logo-text"><b>STACKLY</b></span>
+        </a>
+        <h2>Your Next Great Story<br><span class="script-accent" style="font-size:1.2em">Starts Here.</span></h2>
+        <p>Create a free account to save destinations, track bookings and unlock member-only adventure deals.</p>
+      </div>
+    </div>
+
+    <div class="auth-side">
+      <div class="auth-card" data-aos="fade-up">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <a href="index.html" class="logo" data-no-transition>
+            <img src="img/logo.webp" alt="">
+            <span class="logo-text"><b>STACKLY</b></span>
+          </a>
+          <button class="icon-btn theme-toggle" style="background:var(--bg-soft);border-color:var(--line);color:var(--text-strong)" aria-label="Toggle theme"><span class="ic ic-sun sun-i"></span><span class="ic ic-moon moon-i"></span></button>
+        </div>
+        <h1>Create Account</h1>
+        <p class="sub">Join 50,000+ happy travelers. Free forever.</p>
+        <form id="registerForm" novalidate>
+          <div class="form-group">
+            <label for="rName">Full Name</label>
+            <input class="form-control" id="rName" name="fullname" type="text" placeholder="Your full name" data-validate="required|name|max:50">
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="rEmail">Email</label>
+            <input class="form-control" id="rEmail" name="email" type="email" placeholder="you@example.com" data-validate="required|email">
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="rPhone">Phone</label>
+            <input class="form-control" id="rPhone" name="phone" type="tel" placeholder="10-digit mobile number" data-validate="required|phone">
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="rPass">Password</label>
+            <div class="pw-wrap">
+              <input class="form-control" id="rPass" name="password" type="password" placeholder="Min. 8 characters" data-validate="required|password" data-strength="#pwMeter">
+              <button type="button" class="pw-toggle" aria-label="Show password"><span class="ic ic-eye"></span></button>
+            </div>
+            <div class="pw-strength" id="pwMeter"><span></span><span></span><span></span></div>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="rPass2">Confirm Password</label>
+            <div class="pw-wrap">
+              <input class="form-control" id="rPass2" name="confirm" type="password" placeholder="Repeat your password" data-validate="required|match">
+              <button type="button" class="pw-toggle" aria-label="Show password"><span class="ic ic-eye"></span></button>
+            </div>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="rRole">Register As</label>
+            <select class="form-control" id="rRole" name="role">
+              <option value="user">User</option>
+              <option value="seller">Seller</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="check"><input type="checkbox" name="terms"> I agree to the <a href="faq.html">Terms &amp; Conditions</a></label>
+          </div>
+          <button type="submit" class="btn btn-primary auth-btn">Create Account <span class="ic ic-arrow-right"></span></button>
+        </form>
+        <div class="divider">or sign up with</div>
+        <div class="social-login">
+          <a href="#" onclick="showToast('Social sign-up is UI-only in this demo.');return false;"><span class="ic ic-globe"></span>Google</a>
+          <a href="#" onclick="showToast('Social sign-up is UI-only in this demo.');return false;"><span class="ic ic-facebook"></span>Facebook</a>
+        </div>
+        <p class="auth-alt">Already have an account? <a href="login.html">Log in</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

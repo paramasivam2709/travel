@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog — Stories & Inspiration | Stackly Adventure</title>
+  <meta name="description" content="Adventure travel stories, trekking guides, photography tips and budget travel hacks from the Stackly Adventure team.">
+  <meta name="keywords" content="travel blog, trekking guide, adventure stories, budget travel">
+  <link rel="icon" href="img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" data-no-transition>
+        <img src="img/logo.webp" alt="">
+        <span class="logo-text"><b>STACKLY</b></span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn search-btn" aria-label="Search"><span class="ic ic-search"></span></button>
+        <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><span class="ic ic-sun sun-i"></span><span class="ic ic-moon moon-i"></span></button>
+        <a href="login.html" class="login-link"><span class="ic ic-user"></span>Login</a>
+        <a href="pricing.html" class="btn btn-primary btn-sm"><span class="ic ic-plane"></span>Book Now</a>
+        <button class="hamburger" aria-label="Open menu"><span class="ic ic-menu"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Mobile nav ===== -->
+  <nav class="mobile-nav" aria-label="Mobile">
+    <button class="mobile-close" aria-label="Close menu"><span class="ic ic-close"></span></button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#destinations">Destinations</a>
+    <a href="services.html">Services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <div class="m-actions">
+      <a href="login.html" class="btn btn-ghost">Login</a>
+      <a href="pricing.html" class="btn btn-primary">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- ===== Search overlay ===== -->
+  <div class="search-overlay">
+    <button class="search-close" aria-label="Close search"><span class="ic ic-close"></span></button>
+    <div class="search-box">
+      <form role="search">
+        <input type="text" placeholder="Search destinations, adventures, packages…" aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
+      <p class="search-hint">Try "Bali", "Trekking", "Maldives" or "Skiing"</p>
+    </div>
+  </div>
+  <main>
+    <!-- ===== Page hero ===== -->
+    <section class="page-hero">
+      <div class="ph-bg"><img src="img/blog/blog-2.webp" alt="" loading="lazy"></div>
+      <div class="container">
+        <span class="kicker" style="color:var(--gold)">Stackly Adventure</span>
+        <h1 data-aos="fade-up">Stories From <span class="accent">The Trail</span></h1>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Blog</span></nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- featured -->
+        <div class="featured-post" data-aos="fade-up">
+          <div class="fp-img"><img src="img/hero/hero-main.webp" alt="Sea of clouds above mountain peaks" loading="lazy"></div>
+          <div class="fp-body">
+            <span class="blog-cat" style="position:static;align-self:flex-start">Featured</span>
+            <h2>Chasing the Cloud Sea: A Winter Above 4,000 Meters</h2>
+            <div class="blog-meta"><span><span class="ic ic-calendar"></span>Mar 20, 2026</span><span><span class="ic ic-clock"></span>14 min read</span></div>
+            <p>Our lead guide's account of the season's most dramatic sunrise — frostbite, thermos chai, and a view that made the whole team cry.</p>
+            <a href="blog.html" class="btn btn-primary" style="align-self:flex-start">Read Featured Story <span class="ic ic-arrow-right"></span></a>
+          </div>
+        </div>
+
+        <div class="blog-layout">
+          <div>
+            <div class="blog-tools" data-aos="fade-up">
+              <div class="blog-search">
+                <span class="ic ic-search"></span>
+                <input type="text" id="blogSearch" placeholder="Search stories…" aria-label="Search blog">
+              </div>
+            </div>
+            <div class="cat-pills" id="blogCats" data-aos="fade-up">
+              <button class="cat-pill active" data-cat="all">All</button>
+              <button class="cat-pill" data-cat="guides">Guides</button>
+              <button class="cat-pill" data-cat="trekking">Trekking</button>
+              <button class="cat-pill" data-cat="beaches">Beaches</button>
+              <button class="cat-pill" data-cat="tips">Tips</button>
+              <button class="cat-pill" data-cat="photography">Photography</button>
+              <button class="cat-pill" data-cat="budget">Budget</button>
+            </div>
+            <div class="blog-grid" id="blogGrid" style="grid-template-columns:repeat(2,1fr)">
+            <article class="blog-card" data-cat="guides" data-title="10 best adventure destinations for 2026" data-aos="fade-up">
+              <div class="blog-media"><img src="img/blog/blog-1.webp" alt="10 Best Adventure Destinations for 2026" loading="lazy"><span class="blog-cat">Guides</span></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span><span class="ic ic-calendar"></span>Mar 12, 2026</span><span><span class="ic ic-clock"></span>8 min read</span></div>
+                <h3><a href="blog.html">10 Best Adventure Destinations for 2026</a></h3>
+                <p>From Patagonia's granite towers to Iceland's lava fields — our ranked list of the year's must-explore places.</p>
+                <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+              </div>
+            </article>
+            <article class="blog-card" data-cat="trekking" data-title="complete guide to mountain trekking" data-aos="fade-up">
+              <div class="blog-media"><img src="img/blog/blog-2.webp" alt="Complete Guide to Mountain Trekking" loading="lazy"><span class="blog-cat">Trekking</span></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span><span class="ic ic-calendar"></span>Feb 28, 2026</span><span><span class="ic ic-clock"></span>12 min read</span></div>
+                <h3><a href="blog.html">Complete Guide to Mountain Trekking</a></h3>
+                <p>Training plans, gear checklists and acclimatization science — everything before your first 4,000m.</p>
+                <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+              </div>
+            </article>
+            <article class="blog-card" data-cat="beaches" data-title="best beaches in asia (beyond bali)" data-aos="fade-up">
+              <div class="blog-media"><img src="img/blog/blog-3.webp" alt="Best Beaches in Asia (Beyond Bali)" loading="lazy"><span class="blog-cat">Beaches</span></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span><span class="ic ic-calendar"></span>Feb 10, 2026</span><span><span class="ic ic-clock"></span>6 min read</span></div>
+                <h3><a href="blog.html">Best Beaches in Asia (Beyond Bali)</a></h3>
+                <p>Secret coves in the Philippines, Sri Lanka's surf south and the Andamans' glass-clear shallows.</p>
+                <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+              </div>
+            </article>
+            <article class="blog-card" data-cat="tips" data-title="how to plan your first adventure trip" data-aos="fade-up">
+              <div class="blog-media"><img src="img/blog/blog-4.webp" alt="How to Plan Your First Adventure Trip" loading="lazy"><span class="blog-cat">Tips</span></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span><span class="ic ic-calendar"></span>Jan 22, 2026</span><span><span class="ic ic-clock"></span>9 min read</span></div>
+                <h3><a href="blog.html">How to Plan Your First Adventure Trip</a></h3>
+                <p>Budgets, seasons, insurance and the mistakes every first-timer makes — plan it right the first time.</p>
+                <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+              </div>
+            </article>
+            <article class="blog-card" data-cat="photography" data-title="travel photography tips from the trail" data-aos="fade-up">
+              <div class="blog-media"><img src="img/blog/blog-5.webp" alt="Travel Photography Tips From the Trail" loading="lazy"><span class="blog-cat">Photography</span></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span><span class="ic ic-calendar"></span>Jan 05, 2026</span><span><span class="ic ic-clock"></span>7 min read</span></div>
+                <h3><a href="blog.html">Travel Photography Tips From the Trail</a></h3>
+                <p>Golden-hour discipline, weatherproofing your kit, and composing mountains that actually look big.</p>
+                <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+              </div>
+            </article>
+            <article class="blog-card" data-cat="budget" data-title="the honest budget travel guide" data-aos="fade-up">
+              <div class="blog-media"><img src="img/blog/blog-6.webp" alt="The Honest Budget Travel Guide" loading="lazy"><span class="blog-cat">Budget</span></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span><span class="ic ic-calendar"></span>Dec 18, 2025</span><span><span class="ic ic-clock"></span>10 min read</span></div>
+                <h3><a href="blog.html">The Honest Budget Travel Guide</a></h3>
+                <p>How to trek Nepal for under ₹2,000 a day without eating instant noodles for a month.</p>
+                <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+              </div>
+            </article>
+            <article class="blog-card" data-cat="diving" data-title="learning to scuba: a beginner's diary" data-aos="fade-up">
+              <div class="blog-media"><img src="img/activities/scuba.webp" alt="Learning to Scuba: A Beginner's Diary" loading="lazy"><span class="blog-cat">Diving</span></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span><span class="ic ic-calendar"></span>Dec 02, 2025</span><span><span class="ic ic-clock"></span>8 min read</span></div>
+                <h3><a href="blog.html">Learning to Scuba: A Beginner's Diary</a></h3>
+                <p>From pool panic to reef wonder in four days — what your first open-water course really feels like.</p>
+                <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+              </div>
+            </article>
+            <article class="blog-card" data-cat="camping" data-title="sleeping under stars: camp etiquette 101" data-aos="fade-up">
+              <div class="blog-media"><img src="img/activities/camping.webp" alt="Sleeping Under Stars: Camp Etiquette 101" loading="lazy"><span class="blog-cat">Camping</span></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span><span class="ic ic-calendar"></span>Nov 20, 2025</span><span><span class="ic ic-clock"></span>5 min read</span></div>
+                <h3><a href="blog.html">Sleeping Under Stars: Camp Etiquette 101</a></h3>
+                <p>Leave-no-trace rules, campfire safety and how to pick a pitch that won't flood at 3 AM.</p>
+                <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+              </div>
+            </article>
+            <article class="blog-card" data-cat="winter" data-title="first tracks: skiing gulmarg on a budget" data-aos="fade-up">
+              <div class="blog-media"><img src="img/activities/skiing.webp" alt="First Tracks: Skiing Gulmarg on a Budget" loading="lazy"><span class="blog-cat">Winter</span></div>
+              <div class="blog-body">
+                <div class="blog-meta"><span><span class="ic ic-calendar"></span>Nov 04, 2025</span><span><span class="ic ic-clock"></span>6 min read</span></div>
+                <h3><a href="blog.html">First Tracks: Skiing Gulmarg on a Budget</a></h3>
+                <p>Lift passes, gear rental hacks and the gondola queue strategy nobody tells you about.</p>
+                <a href="blog.html" class="blog-link">Read More <span class="ic ic-arrow-right"></span></a>
+              </div>
+            </article>
+            </div>
+            <p id="blogEmpty" style="display:none;text-align:center;color:var(--text-soft);padding:50px 0">No stories match your search. Try another keyword or category.</p>
+            <div class="pagination" id="blogPager"></div>
+          </div>
+
+          <aside>
+            <div class="sidebar-widget" data-aos="fade-left">
+              <h3>Recent Posts</h3>
+              <div class="mini-post"><img src="img/blog/blog-1.webp" alt="" loading="lazy"><div><a href="blog.html"><b>10 Best Adventure Destinations for 2026</b></a><small>Mar 12, 2026</small></div></div>
+              <div class="mini-post"><img src="img/blog/blog-2.webp" alt="" loading="lazy"><div><a href="blog.html"><b>Complete Guide to Mountain Trekking</b></a><small>Feb 28, 2026</small></div></div>
+              <div class="mini-post"><img src="img/blog/blog-3.webp" alt="" loading="lazy"><div><a href="blog.html"><b>Best Beaches in Asia (Beyond Bali)</b></a><small>Feb 10, 2026</small></div></div>
+            </div>
+            <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="100">
+              <h3>Popular Posts</h3>
+              <div class="mini-post"><img src="img/blog/blog-5.webp" alt="" loading="lazy"><div><a href="blog.html"><b>Travel Photography Tips From the Trail</b></a><small>24K reads</small></div></div>
+              <div class="mini-post"><img src="img/blog/blog-6.webp" alt="" loading="lazy"><div><a href="blog.html"><b>The Honest Budget Travel Guide</b></a><small>19K reads</small></div></div>
+              <div class="mini-post"><img src="img/activities/scuba.webp" alt="" loading="lazy"><div><a href="blog.html"><b>Learning to Scuba: A Beginner's Diary</b></a><small>15K reads</small></div></div>
+            </div>
+            <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="200">
+              <h3>Newsletter</h3>
+              <p style="color:var(--text-soft);font-size:.9rem;margin-bottom:16px">Weekly trail stories and member-only deals.</p>
+              <form class="nl-form" style="flex-direction:column;background:transparent;border:none;padding:0;border-radius:0;backdrop-filter:none">
+                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email" required>
+                <button type="submit" class="btn btn-primary" style="width:100%;margin-top:12px">Subscribe</button>
+              </form>
+              <p class="nl-msg" style="color:var(--text-soft)"></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band" data-aos="zoom-in">
+          <div class="cta-bg"><img src="img/hero/hero-main.webp" alt="" loading="lazy"></div>
+          <h2>Ready For Your Next <span class="script-accent">Adventure?</span></h2>
+          <p>Tell us where your heart points — we'll build the journey, handle the logistics, and you keep the memories.</p>
+          <a href="contact.html" class="btn btn-primary">Plan My Trip <span class="ic ic-arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" data-no-transition>
+            <img src="img/logo.webp" alt="">
+            <span class="logo-text"><b>STACKLY</b></span>
+          </a>
+          <p>Premium adventure travel crafted in Chennai, explored worldwide. Trek higher, dive deeper, dream bigger.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><span class="ic ic-facebook"></span></a>
+            <a href="#" aria-label="Instagram"><span class="ic ic-instagram"></span></a>
+            <a href="#" aria-label="YouTube"><span class="ic ic-youtube"></span></a>
+            <a href="#" aria-label="Twitter / X"><span class="ic ic-twitter"></span></a>
+            <a href="#" aria-label="LinkedIn"><span class="ic ic-linkedin"></span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="about.html#story">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#destinations">Destinations</a></li>
+            <li><a href="index.html#activities">Adventure</a></li>
+            <li><a href="pricing.html">Packages</a></li>
+            <li><a href="blog.html">Travel Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><span class="ic ic-pin"></span>Chennai, Tamil Nadu, India</li>
+            <li><span class="ic ic-phone"></span>+91 98765 43210</li>
+            <li><span class="ic ic-mail"></span>hello@stacklyadventure.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> Stackly Adventure. All rights reserved.</span>
+        <span><a href="faq.html">Privacy Policy</a> · <a href="faq.html">Terms of Travel</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backTop" aria-label="Back to top"><span class="ic ic-arrow-right"></span></button>
+
+  <script>
+  // Blog filtering, search & pagination
+  document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.getElementById("blogGrid");
+    if (!grid) return;
+    const cards = [...grid.querySelectorAll(".blog-card")];
+    const pills = [...document.querySelectorAll("#blogCats .cat-pill")];
+    const search = document.getElementById("blogSearch");
+    const pager = document.getElementById("blogPager");
+    const empty = document.getElementById("blogEmpty");
+    const PER_PAGE = 6;
+    let cat = "all", q = "", page = 1;
+
+    function apply() {
+      const visible = cards.filter(c =>
+        (cat === "all" || c.dataset.cat === cat) &&
+        (!q || c.dataset.title.includes(q))
+      );
+      const pages = Math.max(1, Math.ceil(visible.length / PER_PAGE));
+      if (page > pages) page = pages;
+      cards.forEach(c => c.style.display = "none");
+      visible.slice((page - 1) * PER_PAGE, page * PER_PAGE).forEach(c => { c.style.display = ""; });
+      empty.style.display = visible.length ? "none" : "block";
+      pager.innerHTML = "";
+      for (let i = 1; i <= pages; i++) {
+        const b = document.createElement("button");
+        b.textContent = i;
+        if (i === page) b.classList.add("active");
+        b.addEventListener("click", () => { page = i; apply(); grid.scrollIntoView({behavior:"smooth", block:"start"}); });
+        pager.appendChild(b);
+      }
+      if (window.AOS) AOS.refresh();
+    }
+    pills.forEach(p => p.addEventListener("click", () => {
+      pills.forEach(x => x.classList.remove("active"));
+      p.classList.add("active");
+      cat = p.dataset.cat; page = 1; apply();
+    }));
+    search.addEventListener("input", () => { q = search.value.trim().toLowerCase(); page = 1; apply(); });
+    apply();
+  });
+  </script>
+  <script src="js/vendor/aos.js"></script>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>
