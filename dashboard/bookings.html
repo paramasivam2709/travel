@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookings</title>
+  <meta name="description" content="Every trip, past and future, in one place.">
+  <meta name="keywords" content="stackly adventure dashboard">
+  <link rel="icon" href="../img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body class="dash-body">
+  <div class="dash-layout">
+    <aside class="sidebar">
+      <a href="../index.html" class="sb-brand">
+        <img src="../img/logo.webp" alt="">
+        <span><b>STACKLY</b></span>
+      </a>
+      <nav class="sb-nav">
+        <a href="index.html"><span class="ic ic-home"></span>Dashboard</a>
+        <a href="bookings.html" class="active"><span class="ic ic-calendar"></span>My Bookings</a>
+        <a href="index.html#wishlist"><span class="ic ic-heart"></span>Wishlist</a>
+        <a href="../index.html#destinations"><span class="ic ic-pin"></span>Destinations</a>
+        <a href="index.html#messages"><span class="ic ic-message"></span>Messages</a>
+        <a href="profile.html"><span class="ic ic-user"></span>Profile</a>
+        <a href="settings.html"><span class="ic ic-settings"></span>Settings</a>
+        <a href="logout.html"><span class="ic ic-logout"></span>Logout</a>
+      </nav>
+      <div class="sb-user">
+        <span class="avatar js-user-initials" style="width:42px;height:42px;border-radius:50%;background:var(--grad-sun);color:#fff;display:grid;place-items:center;font-weight:800;font-family:var(--font-display)">--</span>
+        <div><b class="js-user-name">Traveler</b><small class="js-user-role">User</small></div>
+      </div>
+    </aside>
+    <main class="dash-main">
+      <div class="dash-top">
+        <div style="display:flex;align-items:center;gap:16px">
+          <button class="sb-toggle" aria-label="Menu"><span class="ic ic-menu"></span></button>
+          <div><h1>My Bookings</h1><p>Every trip, past and future, in one place.</p></div>
+        </div>
+        <div class="dash-actions">
+          <button class="dash-icon-btn theme-toggle" aria-label="Toggle theme"><span class="ic ic-moon"></span></button>
+          <button class="dash-icon-btn" aria-label="Notifications"><span class="ic ic-bell"></span><span class="dot"></span></button>
+          <a href="../index.html" class="btn btn-primary"><span class="ic ic-globe"></span>View Site</a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>My Bookings</h2>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button class="cat-pill active bk-filter" data-f="all" style="border-radius:12px">All</button>
+            <button class="cat-pill bk-filter" data-f="Confirmed" style="border-radius:12px">Confirmed</button>
+            <button class="cat-pill bk-filter" data-f="Pending" style="border-radius:12px">Pending</button>
+            <button class="cat-pill bk-filter" data-f="Completed" style="border-radius:12px">Completed</button>
+          </div>
+        </div>
+        <table class="dash-table" id="bkTable">
+          <thead><tr><th>Booking</th><th>Destination</th><th>Date</th><th>Travelers</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr data-status="Confirmed"><td><b>#SA-2841</b><br><small>Bali Island Escape</small></td><td>Bali, Indonesia</td><td>May 14, 2026</td><td>2</td><td>₹79,998</td><td><span class="badge ok">Confirmed</span></td></tr>
+            <tr data-status="Pending"><td><b>#SA-2855</b><br><small>Manali Snow Expedition</small></td><td>Manali, India</td><td>Jun 02, 2026</td><td>4</td><td>₹99,996</td><td><span class="badge warn">Pending</span></td></tr>
+            <tr data-status="Pending"><td><b>#SA-2902</b><br><small>Maldives Luxury Retreat</small></td><td>Malé, Maldives</td><td>Aug 21, 2026</td><td>2</td><td>₹1,49,998</td><td><span class="badge info">Awaiting Payment</span></td></tr>
+            <tr data-status="Completed"><td><b>#SA-2590</b><br><small>Thailand Explorer</small></td><td>Krabi, Thailand</td><td>Jan 08, 2026</td><td>3</td><td>₹59,997</td><td><span class="badge ok">Completed</span></td></tr>
+            <tr data-status="Completed"><td><b>#SA-2417</b><br><small>Swiss Alpine Adventure</small></td><td>Interlaken, Switzerland</td><td>Sep 12, 2025</td><td>2</td><td>₹1,79,998</td><td><span class="badge ok">Completed</span></td></tr>
+            <tr data-status="Completed"><td><b>#SA-2288</b><br><small>Dubai City Lights</small></td><td>Dubai, UAE</td><td>Mar 30, 2025</td><td>5</td><td>₹2,74,995</td><td><span class="badge ok">Completed</span></td></tr>
+            <tr data-status="Cancelled"><td><b>#SA-2150</b><br><small>Paris Romantic Getaway</small></td><td>Paris, France</td><td>Dec 24, 2024</td><td>2</td><td>₹1,39,998</td><td><span class="badge err">Cancelled</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <script>
+      document.addEventListener("DOMContentLoaded",()=>{
+        document.querySelectorAll(".bk-filter").forEach(b=>b.addEventListener("click",()=>{
+          document.querySelectorAll(".bk-filter").forEach(x=>x.classList.remove("active"));
+          b.classList.add("active");
+          const f=b.dataset.f;
+          document.querySelectorAll("#bkTable tbody tr").forEach(r=>{
+            r.style.display=(f==="all"||r.dataset.status===f)?"":"none";
+          });
+        }));
+      });
+      </script>
+    </main>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/dashboard.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",()=>dashBoot("user"));</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <meta name="description" content="Welcome back! Here's your travel world at a glance.">
+  <meta name="keywords" content="stackly adventure dashboard">
+  <link rel="icon" href="../img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script>if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark");</script>
+</head>
+<body class="dash-body">
+  <div class="dash-layout">
+    <aside class="sidebar">
+      <a href="../index.html" class="sb-brand">
+        <img src="../img/logo.webp" alt="">
+        <span><b>STACKLY</b></span>
+      </a>
+      <nav class="sb-nav">
+        <a href="index.html" class="active"><span class="ic ic-home"></span>Dashboard</a>
+        <a href="bookings.html"><span class="ic ic-calendar"></span>My Bookings</a>
+        <a href="index.html#wishlist"><span class="ic ic-heart"></span>Wishlist</a>
+        <a href="../index.html#destinations"><span class="ic ic-pin"></span>Destinations</a>
+        <a href="index.html#messages"><span class="ic ic-message"></span>Messages</a>
+        <a href="profile.html"><span class="ic ic-user"></span>Profile</a>
+        <a href="settings.html"><span class="ic ic-settings"></span>Settings</a>
+        <a href="logout.html"><span class="ic ic-logout"></span>Logout</a>
+      </nav>
+      <div class="sb-user">
+        <span class="avatar js-user-initials" style="width:42px;height:42px;border-radius:50%;background:var(--grad-sun);color:#fff;display:grid;place-items:center;font-weight:800;font-family:var(--font-display)">--</span>
+        <div><b class="js-user-name">Traveler</b><small class="js-user-role">User</small></div>
+      </div>
+    </aside>
+    <main class="dash-main">
+      <div class="dash-top">
+        <div style="display:flex;align-items:center;gap:16px">
+          <button class="sb-toggle" aria-label="Menu"><span class="ic ic-menu"></span></button>
+          <div><h1>Dashboard</h1><p>Welcome back! Here's your travel world at a glance.</p></div>
+        </div>
+        <div class="dash-actions">
+          <button class="dash-icon-btn theme-toggle" aria-label="Toggle theme"><span class="ic ic-moon"></span></button>
+          <button class="dash-icon-btn" aria-label="Notifications"><span class="ic ic-bell"></span><span class="dot"></span></button>
+          <a href="../index.html" class="btn btn-primary"><span class="ic ic-globe"></span>View Site</a>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card"><span class="stat-ic g1"><span class="ic ic-mountain"></span></span><div><span class="num" data-count="24">0</span><br><small>Total Trips</small></div><span class="trend">+3 this year</span></div>
+        <div class="stat-card"><span class="stat-ic g2"><span class="ic ic-calendar"></span></span><div><span class="num" data-count="3">0</span><br><small>Upcoming Trips</small></div><span class="trend">Next: May 14</span></div>
+        <div class="stat-card"><span class="stat-ic g3"><span class="ic ic-check"></span></span><div><span class="num" data-count="21">0</span><br><small>Completed Trips</small></div><span class="trend">98% on time</span></div>
+        <div class="stat-card"><span class="stat-ic g4"><span class="ic ic-heart"></span></span><div><span class="num" data-count="12">0</span><br><small>Wishlist</small></div><span class="trend">2 on sale</span></div>
+      </div>
+
+      <div class="dash-cols">
+        <div>
+          <div class="panel">
+            <div class="panel-head"><h2>Booking Activity</h2><span class="badge info">Last 7 months</span></div>
+            <div class="bar-chart">
+              <div class="bar-col"><div class="bar" data-h="35" data-v="2"></div><small>Oct</small></div>
+              <div class="bar-col"><div class="bar" data-h="50" data-v="3"></div><small>Nov</small></div>
+              <div class="bar-col"><div class="bar" data-h="42" data-v="2"></div><small>Dec</small></div>
+              <div class="bar-col"><div class="bar" data-h="70" data-v="4"></div><small>Jan</small></div>
+              <div class="bar-col"><div class="bar" data-h="58" data-v="3"></div><small>Feb</small></div>
+              <div class="bar-col"><div class="bar" data-h="84" data-v="5"></div><small>Mar</small></div>
+              <div class="bar-col"><div class="bar hot" data-h="100" data-v="6"></div><small>Apr</small></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head"><h2>Recent Bookings</h2><a class="link" href="bookings.html">View all</a></div>
+            <table class="dash-table">
+              <thead><tr><th>Package</th><th>Date</th><th>Travelers</th><th>Amount</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td><div class="td-user"><img src="../img/destinations/bali.webp" alt="Bali"><div><b>Bali Island Escape</b><small>5D / 4N</small></div></div></td><td>May 14, 2026</td><td>2</td><td>₹79,998</td><td><span class="badge ok">Confirmed</span></td></tr>
+                <tr><td><div class="td-user"><img src="../img/destinations/manali.webp" alt="Manali"><div><b>Manali Snow Expedition</b><small>4D / 3N</small></div></div></td><td>Jun 02, 2026</td><td>4</td><td>₹99,996</td><td><span class="badge warn">Pending</span></td></tr>
+                <tr><td><div class="td-user"><img src="../img/destinations/maldives.webp" alt="Maldives"><div><b>Maldives Luxury Retreat</b><small>4D / 3N</small></div></div></td><td>Aug 21, 2026</td><td>2</td><td>₹1,49,998</td><td><span class="badge info">Awaiting Payment</span></td></tr>
+                <tr><td><div class="td-user"><img src="../img/destinations/thailand.webp" alt="Thailand"><div><b>Thailand Explorer</b><small>3D / 2N</small></div></div></td><td>Jan 08, 2026</td><td>3</td><td>₹59,997</td><td><span class="badge ok">Completed</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <div class="trip-hero" style="margin-bottom:26px">
+            <img src="../img/destinations/bali.webp" alt="Bali trip">
+            <div class="th-body">
+              <span class="badge warn">Next Adventure</span>
+              <h3 style="margin-top:10px">Bali Island Escape</h3>
+              <p>May 14 – 18, 2026 · 2 travelers · Booking #SA-2841</p>
+              <div class="progress-line"><span data-w="68"></span></div>
+              <p style="margin-top:8px;font-size:.78rem">Trip readiness: 68% — visa approved, hotel confirmed</p>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head"><h2>Travel Stats</h2></div>
+            <div class="donut-wrap">
+              <div class="donut"><div class="donut-center"><div><b>24</b><br><small>trips</small></div></div></div>
+              <ul class="legend" style="flex:1">
+                <li><span class="sw" style="background:var(--orange)"></span>Mountains <b>10</b></li>
+                <li><span class="sw" style="background:var(--teal)"></span>Beaches <b>7</b></li>
+                <li><span class="sw" style="background:var(--ocean)"></span>Cities <b>4</b></li>
+                <li><span class="sw" style="background:var(--gold)"></span>Wildlife <b>3</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel" id="messages">
+            <div class="panel-head"><h2>Notifications</h2><span class="badge ok">3 new</span></div>
+            <div class="notif"><span class="n-ic" style="background:var(--grad-sun)"><span class="ic ic-plane"></span></span><div><p><b>Check-in opens soon</b> for Bali Island Escape — web check-in recommended.</p><small>2 hours ago</small></div></div>
+            <div class="notif"><span class="n-ic" style="background:var(--grad-blue)"><span class="ic ic-wallet"></span></span><div><p><b>Payment reminder:</b> Maldives balance due by Apr 30.</p><small>Yesterday</small></div></div>
+            <div class="notif"><span class="n-ic" style="background:linear-gradient(135deg,#00C2A8,#00A8CC)"><span class="ic ic-star"></span></span><div><p><b>Review your Thailand trip</b> and earn 500 adventure credits.</p><small>2 days ago</small></div></div>
+          </div>
+
+          <div class="panel profile-card" id="wishlist">
+            <span class="avatar js-user-initials" style="width:96px;height:96px;border-radius:50%;background:var(--grad-sun);color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.8rem;margin:0 auto 16px;border:4px solid var(--gold);font-family:var(--font-display)">--</span>
+            <h3 class="js-user-name">Traveler</h3>
+            <small class="js-user-email">you@example.com</small>
+            <div class="p-stats">
+              <div><b>24</b><small>Trips</small></div>
+              <div><b>12</b><small>Wishlist</small></div>
+              <div><b>4.9</b><small>Rating</small></div>
+            </div>
+            <a href="profile.html" class="btn btn-ocean" style="width:100%;justify-content:center">Edit Profile</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/dashboard.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",()=>dashBoot("user"));</script>
+</body>
+</html>
